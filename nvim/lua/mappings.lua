@@ -24,3 +24,9 @@ map({ "v" }, "<A-Down>", ":m '>+1<CR>gv=gv", { desc = "Swap the line up", norema
 -- Save the files in any mode
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map({ "n", "v" }, "w", "<cmd> w <cr>")
+
+-- local dap = require("dap")
+map("n", "<leader>db", require("dap").toggle_breakpoint, {})
+map("n", "<leader>dt", require("dap").terminate, {})
+map("n", "<leader>do", require("dapui").open, {})
+map("n", "<leader>de", require("dapui").close, {})
