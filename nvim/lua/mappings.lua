@@ -30,3 +30,7 @@ map("n", "<leader>db", require("dap").toggle_breakpoint, {})
 map("n", "<leader>dt", require("dap").terminate, {})
 map("n", "<leader>do", require("dapui").open, {})
 map("n", "<leader>de", require("dapui").close, {})
+
+-- tmux keymaps
+map("n", "<leader>jn", "<C-b>n", {desc="Jump to next window (tmux)"})
+map("n", "<leader>jp", "<C-b>p", {desc="Jump to prev window (tmux)"})
